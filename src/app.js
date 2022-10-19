@@ -11,7 +11,7 @@ const app = async (yargsObject) =>{
         }else if (yargsObject.read){
             //
         }else{
-            //
+            console.log("Incorrect command")
         }
         await sequelize.close()
     }catch (error){
