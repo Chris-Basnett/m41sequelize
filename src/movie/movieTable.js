@@ -1,15 +1,15 @@
 const {DataTypes} = require('sequelize')
-const {sequeliize} = require("../db/connection")
+const {sequelize} = require("../db/connection")
 
-const Movie = sequeliize.define("Movie", {
-    title: {
+const Movie = sequelize.define("Movie", {
+    title:{
         type: DataTypes.STRING,
         allowNull: false,
         unique: true
     },
-    actor: {
+    actor:{
         type: DataTypes.STRING,
-        defaultValue: "Not sprcified"
+        defaultValue: "Not specified"
     }
 })
 
